@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Fashion Life style Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet"  type="text/css" href="css/style.css">
+  
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <style>
+ 	*{
+	margin:0;
+	padding:0;
+	
+}
+
+.right-menu li 
+{
+	font-size:18px;
+	margin-top:10px;
+	cursor:pointer;
+	display:inline-block;
+}
+.navbar-brand img{
+	width:160px;
+}
+.navbar-brand{
+	left:50%;
+
+	
+	top:25px;
+	transform:translate(-50px);
+	position:absolute;
+}
+.header{
+	background:#f5f6fc;
+}
+.navbar{
+	padding:0 35px ! important;
+
+}
+.banner-img{
+	margin:80px 115px;
+	width:60%;
+}
+.banner-img img{
+	width:100%;
+	margin-bottom:-80px;
+}
+
+.banner{
+	position:relative;
+}
+.banner-title{
+	position:absolute;
+	left:50%;
+	top:20%;
+}
+.banner-title h1{
+	font-size:55px;
+	background:rgba(0,0,0,0.75);
+	color:#fff;
+	line-height:70px;
+	padding: 10px 10px 0 10px;
+}
+.fashion-trend{
+	padding:100px 0;
+}
+
+.fashion-box{
+	margin:80px 0;
+}
+.tittle-style{
+	margin:0 auto 80px;
+	height:120px;
+
+	width:80%;
+	max-width:700px;
+	background:#fff;
+	position:relative;
+	box-shadow:0px 4px 5px 0 rgba(0,0,50,0.5);
+}
+.tittle-style::after{
+	content:'';
+	height:100px;
+	width:200px;
+	background-color:#f992a6;
+	position:absolute;
+	top:-10px;
+	left:-10px;
+	z-index:-1;
+
+
+}
+.tittle-style::before{
+	content:'';
+	height:100px;
+	width:200px;
+	background-color:#f992a6;
+	position:absolute;
+	bottom:-10px;
+	right:-10px;
+	z-index:-1;
+
+
+}
+.trending-img{
+	position:relative;
+	margin-bottom:15px;
+}
+.trending-img img{
+	width:100%;
+}
+.btn-buy{
+	width:150px;
+	padding:10px 0;
+	outline:none;
+	border:0;
+	border-radius:2px;
+	position:absolute;
+	background:#fff;
+	left:50%;
+	bottom:0%;
+	transform:translate(-50%,0);
+	transition:0.6;
+}
+.trending-img:hover .btn-buy{
+	transform:translate(-50%,50%);
+	bottom:50%;
+	opacity:1;
+}
+.overlay{
+	height:100%;
+	width:100%;
+	background:#333;
+	position:absolute;
+	top:0;
+	opacity:0.5;
+	transition:0.6;
+}
+.offer{
+	background-image:url('image/beauty4.jpg');
+
+	background-size:cover;
+	background-position:center;
+}
+.row{
+	margin:initial ! important;
+}
+.subscribe{
+	max-width:500px;
+	margin-top:80px;
+	background:#ffffff8c;
+	margin-bottom:20px;
+}
+.offer img
+{
+width:300px;
+height:400px;
+margin-bottom:-100px;
+margin-top:150px;
+}
+.fashion-blog{
+	margin:250px 0  150px 0;
+}
+.blog-img{
+	margin-top:50px;
+	height:300px;
+	width:300px;
+	display:inline-block;
+}
+.blog-img img{
+	width:100%;
+	height:100%;
+}
+.fashion-blog h5{
+margin-top:20px;
+font-weight:bold;
+}
+.brand-logo{
+	width:200px;
+	height:200px;
+	background:#fff;
+	border-radius:50%;
+	margin:50px auto 30px;
+	box-shadow::0 2px 40px 0 rgba(110,130,208,18);
+}
+.brand-logo img{
+	width:100px;
+	margin:50px auto;
+}
+
+  .footer{
+  	margin-top:150px;
+  	background:#f5f6fc;
+  }
+  .payment{
+  	margin:50px auto;
+  }
+  .payment img{
+  	width:300px;
+  	cursor:pointer;
+  }
+  .insta-img img{
+  	width:350px;
+  	height:200px;
+  }
+  .app-download img{
+  	width:200px;
+
+  }
+  .footer-icon{
+  	text-align:right;
+  }
+.footer-icon .fa{
+	margin:0 10px auto;
+	font-size:20px;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<section class="header">
+		<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+  	<img src="image/fashion.jpg">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Service</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Policy</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Condition</a>
+      </li>
+      
+    </ul>
+
+    <ul class="right-menu ml-auto">
+    <li><i class="fa fa-facebook"></i></li>	
+    <li><i class="fa fa-instagram"></i></li>	
+    <li><i class="fa fa-twitter"></i></li>	
+    <li>
+    	<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text"> <i class="fa fa-search"> </span> </i>
+  </div>
+</div>
+</li>
+</ul>
+  </div>
+</nav>
+<div class="banner">
+	<div class="banner-img">
+	<img src="image/beauty6.jpg">
+</div>
+<div class="banner-title">
+	<h1> Fashion Story </h1>
+	<h1> Womens Life style  </h1>
+</div>
+</div>
+	</section>
+	<!--- fashion trend----->
+	<section class="fashion-trend">
+		<div class="container">
+			<div class="fashion-box">
+				<div class="tittle-style text-center">
+				<h1> FASHION TRENDS </h1>
+			</div>
+				<p class="text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+			</div>
+		</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="trending-img">
+
+				<img src="image/beauty1.jpg">
+				<button type="button" class="btn-buy"> Buy Now </button>
+			
+			<div class="overlay"> </div>
+		</div>
+	</div>
+		<div class="col-md-4">
+			<div class="trending-img">
+				<img src="image/beauty.jpg">
+				<button type="button" class="btn-buy"> Buy Now </button>
+			
+			<div class="overlay"> </div>
+		</div>
+	</div>
+		<div class="col-md-4">
+			<div class="trending-img">
+				<img src="image/beauty2.jpg">
+				<button type="button" class="btn-buy"> Buy Now </button>
+			
+			<div class="overlay"> </div>
+		</div>
+	</div>
+
+			</div>
+		
+</section>
+<!---- offer------>
+<section class="offer">
+	<div class="row">
+		<div class="col-md-6 text-center">
+			<img src="image/beauty7.jpg">
+			
+		</div>
+		<div class="col-md-6">
+			<div class="subscribe">
+				<h4> Funshion exclusive </h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				</div>
+				</div>
+			</div>
+		</section>
+
+	<section class="fashion-blog">
+		<div class="fashion-box">
+				<div class="tittle-style text-center">
+				<h1> LATEST FASHION BLOG </h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="blog-img">
+						<img src="image/beauty8.jpg">
+				</div>
+			</div>
+				
+				<div class="col-md-4">
+					<div class="blog-img">
+						<img src="image/beauty9.jpg">
+				</div>
+				</div>
+				<div class="col-md-4">
+				<div class="blog-img">
+						<img src="image/beauty10.jpg">
+				</div>
+			</div>
+			</div>
+			</div>
+		
+	</section>
+<section class="fashion-brands">
+	<div class="tittle-style text-center">
+				<h1> OUR FASHION BRAND </h1>
+			</div>
+			<div class="container">
+
+				<div class="row text-center">
+					<div class="col-md-3">
+						<div class="brand-logo">
+							<img src="image/logo.jpg">
+					</div>
+				</div>
+					<div class="col-md-3">
+						<div class="brand-logo">
+							<img src="image/logo1.jpg">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="brand-logo">
+							<img src="image/logo2.jpg">
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="brand-logo">
+							<img src="image/logo3.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---- footer ---->
+			<section class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="payment">
+							<h5> PAYMENT GATEWAY </h5>
+							<img src="image/payment.jpg">
+						</div>
+					</div>
+						<div class="col-md-4">
+							<div class="insta-img">
+							<img src="image/mix.jpg">
+						</div>
+					</div>
+						<div class="col-md-4">
+							<div class="app-download">
+								<h5> DOWNLOAD MoBILE APP </h5>
+								<img src="image/google.jpg">
+								<img src="image/apple.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+			<hr>
+			<div class="row">
+				<div class="col-md-8">
+					<p class="copyright"> Design with <i class="fa fa-heart"> </i> Made By Ritesh Tiwari  </p>
+				</div>
+					<div class="col-md-4">
+						<div class="footer-icon">
+							<i class="fa fa-facebook"> </i>
+							<i class="fa fa-twitter"> </i>
+							<i class="fa fa-instagram"> </i>
+							<i class="fa fa-you-tube"> </i>
+							<i class="fa fa-linkedin"> </i>
+					</div>
+				</div>
+			</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
